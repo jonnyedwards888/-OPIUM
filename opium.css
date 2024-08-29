@@ -1,0 +1,242 @@
+
+#myDiv img {
+    border-width: 5rem;
+    border: 2px solid white;
+    border-style:double;
+    border-radius: 15px;
+    background-color: orange;
+    
+    
+}
+.pirata-one-regular {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @keyframes glow {
+    0% {
+        border-color: white;
+        box-shadow: 0 0 10px white;
+    }
+    50% {
+        border-color: red;
+        box-shadow: 0 0 20px red;
+    }
+    100% {
+        border-color: white;
+        box-shadow: 0 0 10px white;
+    }
+}
+
+#glowing-border {
+    border: 5px solid white; /* Initial border */
+    animation: glow 2s infinite; /* 2 seconds for a full cycle, repeat infinitely */
+    border-radius: 10px; /* Optional: to make the corners rounded */
+}
+  
+
+
+@font-face {
+    font-family: 'MyCustomFont'; /* You can name this whatever you like */
+    src: url('CloisterBlack.ttf') format('truetype'); /* Path to the font file */
+    font-weight: normal; /* Adjust if you have different weights */
+    font-style: normal; /* Adjust if you have different styles */
+}
+
+#myDiv {
+    
+}
+
+.tiktok-embed {
+    background-color: transparent !important;
+}
+
+.tiktok-embed section {
+    background-color: transparent !important;
+}
+
+
+
+
+.moving-text-container  {
+    
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    white-space: nowrap;
+    
+    overflow: hidden;
+    user-select: none;
+    
+    gap: 20px;
+    display: flex;
+
+}
+
+.img-container {
+    width: auto;
+}
+
+#opium-videos {
+    border-radius: 250px;
+
+
+}
+
+
+
+.moving-text-and-buttons {
+    
+}
+
+.purple-flame {
+    background-color: green;
+    display: inline-block;
+    float: left;
+    height: 10rem;
+    width:7rem;
+    position: relative;
+    top: -14rem;
+}
+
+#topbuttons {
+    
+}
+
+.moving-text-container ul  {
+    list-style: none;
+    display: flex;
+    min-width: 100%;
+    justify-content: space-between;
+    
+    align-items: center;
+    gap: 20px;
+    
+    animation: scroll linear 10s infinite;
+
+    
+}
+
+@keyframes scroll {
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+
+
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+#topbuttons p:hover {
+    
+    color: red;
+    cursor: pointer;
+    
+}
+
+#falling-images-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px; /* Adjust width as needed */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow */
+}
+
+.falling-image {
+    position: absolute;
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    animation: fall 5s linear infinite; /* Adjust duration as needed */
+}
+
+/* Keyframes for falling animation */
+@keyframes fall {
+    0% {
+        top: -100px; /* Start above the viewport */
+        opacity: 1;
+    }
+    100% {
+        top: 100vh; /* End below the viewport */
+        opacity: 0; /* Optional: fade out effect */
+    }
+}
+
+/* Optional: Randomize the falling position and timing for each image */
+.falling-image:nth-child(1) {
+    left: 10%;
+    animation-duration: 7s; /* Different duration for each image */
+    animation-delay: 0s; /* Start immediately */
+}
+.falling-image:nth-child(2) {
+    left: 10%;
+    animation-duration: 7s;
+    animation-delay: 0s;
+}
+.falling-image:nth-child(3) {
+    left: 10%;
+    animation-duration: 7s;
+    animation-delay: 0s;
+}
+/* Add mo
+
+#falling-images-container-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px; /* Adjust width as needed */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow */
+}
+
+.falling-image {
+    position: absolute;
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    animation: fall 5s linear infinite; /* Adjust duration as needed */
+}
+
+/* Keyframes for falling animation */
+@keyframes fall {
+    0% {
+        top: -100px; /* Start above the viewport */
+        opacity: 1;
+    }
+    100% {
+        top: 100vh; /* End below the viewport */
+        opacity: 0; /* Optional: fade out effect */
+    }
+}
+
+/* Optional: Randomize the falling position and timing for each image */
+.falling-image:nth-child(1) {
+    left: 10%;
+    animation-duration: 6s; /* Different duration for each image */
+    animation-delay: 0s; /* Start immediately */
+}
+.falling-image:nth-child(2) {
+    left: 30%;
+    animation-duration: 7s;
+    animation-delay: 0s;
+}
+.falling-image:nth-child(3) {
+    left: 50%;
+    animation-duration: 5s;
+    animation-delay: 0s;
+}
+/* Add more styles for additional images as needed */
